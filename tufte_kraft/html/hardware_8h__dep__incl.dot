@@ -1,0 +1,33 @@
+digraph "source/hardware.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="source/hardware.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="source/elevator_state.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$elevator__state_8h.html",tooltip="State machine. "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="source/elevator_state.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$elevator__state_8c_source.html"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="source/hardware_input.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hardware__input_8h.html",tooltip="Hardware input. Iterates through floor sensors and order buttons using functions defined in hardware..."];
+  Node4 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="source/system_operation.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$system__operation_8h.html",tooltip="Start up and running progress for elevator. "];
+  Node5 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="source/main.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html",tooltip="Main. "];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="source/system_operation.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$system__operation_8c_source.html"];
+  Node4 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="source/hardware_input.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$hardware__input_8c_source.html"];
+  Node2 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="source/request.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$request_8h.html",tooltip="Defines the Order struct, and is responsible for the arrays containing them. "];
+  Node9 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="source/request.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$request_8c_source.html"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}
